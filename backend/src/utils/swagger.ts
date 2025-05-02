@@ -11,7 +11,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:5000",
+        url: "https://game-management-system.onrender.com/",
         description: "Development server",
       },
     ],
