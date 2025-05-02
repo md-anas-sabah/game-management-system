@@ -126,12 +126,13 @@ const GameList: React.FC = () => {
             </CardContent>
             <CardFooter className="flex justify-between pt-3 border-t">
               <Link to={`/games/edit/${game._id}`}>
-                <Button variant="outline" size="sm">
+                <Button variant="outline" size="sm" className="cursor-pointer">
                   <Edit className="h-4 w-4 mr-2" />
                   Edit
                 </Button>
               </Link>
               <Button
+                className="bg-red-400 text-destructive-foreground hover:bg-destructive/90 cursor-pointer"
                 variant="destructive"
                 size="sm"
                 onClick={() => handleDeleteClick(game)}

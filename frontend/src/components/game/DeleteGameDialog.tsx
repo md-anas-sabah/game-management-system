@@ -25,7 +25,7 @@ const DeleteGameDialog: React.FC<DeleteGameDialogProps> = ({
 }) => {
   return (
     <AlertDialog open={isOpen} onOpenChange={onClose}>
-      <AlertDialogContent>
+      <AlertDialogContent className="bg-white dark:bg-white border-gray-200 dark:border-gray-200 text-gray-900 dark:text-gray-900">
         <AlertDialogHeader>
           <AlertDialogTitle>Are you sure?</AlertDialogTitle>
           <AlertDialogDescription>
@@ -34,10 +34,12 @@ const DeleteGameDialog: React.FC<DeleteGameDialogProps> = ({
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
+          <AlertDialogCancel className="cursor-pointer">
+            Cancel
+          </AlertDialogCancel>
           <AlertDialogAction
             onClick={onConfirm}
-            className="bg-destructive text-destructive-foreground"
+            className="bg-red-400 text-destructive-foreground cursor-pointer"
           >
             Delete
           </AlertDialogAction>

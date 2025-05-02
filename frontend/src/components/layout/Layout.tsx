@@ -2,14 +2,13 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Toaster } from "sonner";
 
-
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col w-[80%] mr-auto ml-auto">
       <Navbar />
       <main className="flex-1 container py-6">{children}</main>
       <footer className="border-t">

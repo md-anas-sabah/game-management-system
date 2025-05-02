@@ -173,7 +173,7 @@ const GameForm: React.FC<GameFormProps> = ({
           >
             Cancel
           </Button>
-          <Button type="submit" disabled={isSubmitting}>
+          <Button type="submit" disabled={isSubmitting} className="bg-black text-white">
             {isSubmitting
               ? isEditing
                 ? "Updating..."
