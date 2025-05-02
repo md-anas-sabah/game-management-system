@@ -174,7 +174,7 @@ This provides interactive documentation for all available endpoints.
    ```
 
 2. Deploy the contents of the `build` directory to platforms like Netlify, Vercel, or GitHub Pages.
-3. Make sure to update the `REACT_APP_API_URL` environment variable to point to your deployed backend API.
+3. Make sure to update the `VITE_API_URL` environment variable to point to your deployed backend API.
 
 ## Code Structure and Best Practices
 
