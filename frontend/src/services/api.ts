@@ -2,7 +2,7 @@
 import axios from "axios";
 import { Game, GameFormValues, ApiResponse } from "../types/game";
 
-const API_URL = import.meta.env.VITE_API_URL || "https://game-management-system.onrender.com/api";
+const API_URL = "https://game-management-system.onrender.com/api";
 
 const apiClient = axios.create({
   baseURL: API_URL,
